@@ -8,7 +8,7 @@ const ProductsRoutes = require('./Routes/ProductRouter')
 require('dotenv').config()
 
 app.use(bodyParser.json())
-server.use(
+app.use(
   cors({
     origin: '',
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
