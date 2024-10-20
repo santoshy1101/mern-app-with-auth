@@ -70,10 +70,11 @@ const login = async (req, res) => {
       message: 'Login success',
       success: true,
       jwtToken,
-      email,
+      email:user.email,
       name: user.name,
     })
   } catch (error) {
+    console.log('error during the login', error)
     res.status(500).json({
       message: 'Internal server error',
       success: false,
