@@ -11,7 +11,7 @@ require('./Models/db')
 const PORT = process.env.PORT || 4000
 
 server.get('/', (req, res) => {
-  res.send('server connnected')
+  res.send('server connnected!!!')
 })
 app.get('/ping', (req, res) => {
   res.send('PONG')
