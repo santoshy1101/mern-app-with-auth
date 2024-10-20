@@ -33,3 +33,5 @@ app.use('/products', ProductsRoutes)
 app.listen(PORT, () => {
   console.log(`server is running on ${PORT}`)
 })
+
+module.exports = app;
