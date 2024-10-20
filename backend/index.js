@@ -20,7 +20,7 @@ require('./Models/db')
 
 const PORT = process.env.PORT || 4000
 
-server.get('/', (req, res) => {
+app.get('/', (req, res) => {
   res.send('server connnected!!!')
 })
 app.get('/ping', (req, res) => {
@@ -33,5 +33,3 @@ app.use('/products', ProductsRoutes)
 app.listen(PORT, () => {
   console.log(`server is running on ${PORT}`)
 })
-
-module.exports = app;
